@@ -5,11 +5,11 @@ This project intends to receive a symptom chosen by a user and return to them th
 
 # Getting started
 
-## Clone the repo.
+###### Clone the repo.
 
         git clone git@github.com:n8sty/eko.git
 
-## Create and activate a development environment. Python uses [virtual environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/) to encapsulate the dependencies for a given project. This project was made using Virtualenvwrapper
+###### Create and activate a development environment. Python uses [virtual environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/) to encapsulate the dependencies for a given project. This project was made using Virtualenvwrapper
 
         pip install virtualenvwrapper
         mkvirtualenv diagnostic-test-app-env
@@ -17,7 +17,7 @@ This project intends to receive a symptom chosen by a user and return to them th
 
     https://virtualenvwrapper.readthedocs.io/en/latest/install.html
 
-## Install Django and the project requirements. Then migrate the database
+###### Install Django and the project requirements. Then migrate the database
 
         pip install django
         pip install -r requirements.txt
@@ -25,7 +25,7 @@ This project intends to receive a symptom chosen by a user and return to them th
         python manage.py makemigrations
         python manage.py migrate
 
-## Seed database using the symptoms.csv file. You can dump the data inside the interactive shell:
+###### Seed database using the symptoms.csv file. You can dump the data inside the interactive shell:
 
         python manage.py shell
 
@@ -41,16 +41,16 @@ This project intends to receive a symptom chosen by a user and return to them th
                 d = Diagnosis(name=diagnosis, symptom=s)
                 d.save() 
 
-## Install React dependencies and run app
+###### Install React dependencies and run app
 
         npm install
         npm start
 
-## Run Django Server
+###### Run Django Server
 
         python manage.py runserver
 
-## To create a production build of the React app:
+###### To create a production build of the React app:
 
         npm run build
 
@@ -59,5 +59,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-# React-Django app
+## React-Django app
 Simple setup for a React-Django web app. See tutorial here: https://medium.com/@nicholaskajoh/heres-a-dead-simple-react-django-setup-for-your-next-project-c0b0036663c6.

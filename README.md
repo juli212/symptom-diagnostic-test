@@ -7,7 +7,7 @@ This project intends to receive a symptom chosen by a user and return to them th
 
 ###### Clone the repo.
 
-        git clone git@github.com:n8sty/eko.git
+        git clone https://github.com/juli212/symptom-diagnostic-test.git
 
 ###### Create and activate a development environment. Python uses [virtual environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/) to encapsulate the dependencies for a given project. This project was made using Virtualenvwrapper
 

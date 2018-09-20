@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third party
     'rest_framework',
 
+    # my apps
     'api',
 ]
 
@@ -59,7 +61,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'build')
+            # load build/index.js as template
+            os.path.join(BASE_DIR, 'build'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -125,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# added so collectstatic will copy css and js files
 STATICFILES_DIRS = [
   os.path.join(BASE_DIR, 'build/static'),
 ]

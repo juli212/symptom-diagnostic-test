@@ -2,6 +2,8 @@
 
 This project intends to receive a symptom chosen by a user and return to them the most likely medical diagnosis. If there are multiple highest-frequency diagnoses, one will be chosen at random to be displayed.
 
+The API provided returns a Symptom object or a collection of Symptom objects and each of their nested possible Diagnosis options. Each Diagnosis object has a count attribute which provides the number of times it has been selected as the correct diagnosis for it's associated Symptom.
+
 
 # Getting started
 
